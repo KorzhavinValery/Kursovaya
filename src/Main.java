@@ -20,8 +20,6 @@ public class Main {
         printAllNameOfEmployees(employees);
     }
 
-    //Получить список всех сотрудников со всеми
-    // имеющимися по ним данными (вывести в консоль значения всех полей (toString)).
     public static void printAllDataEmployees(Employee[] allData) {
         for (Employee employee : allData) {
             System.out.println(employee);
@@ -60,7 +58,8 @@ public class Main {
         }
         return maxExpenses;
     }
-    public static float averageSalary (Employee[] averageSalary) {
+
+    public static float averageSalary(Employee[] averageSalary) {
         float sumOfSalary = 0;
         int number = 0;
         for (Employee employee : averageSalary) {
@@ -69,8 +68,9 @@ public class Main {
                 number++;
             }
         }
-        return sumOfSalary/number;
+        return sumOfSalary / number;
     }
+
     public static void printAllNameOfEmployees(Employee[] allNames) {
         for (Employee employee : allNames) {
             if (employee != null) {
