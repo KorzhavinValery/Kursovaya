@@ -3,15 +3,15 @@ import java.util.Objects;
 public class Employee {
     private String fullName;
     private int departments;
-    private float salary;
-    private int iD;
+    private int salary;
+    private int id;
     private static int counter;
 
-    public Employee(String fullName, int departments, float salary) {
+    public Employee(String fullName, int departments, int salary) {
         this.fullName = fullName;
         this.departments = departments;
         this.salary = salary;
-        iD = ++counter;
+        id = ++counter;
     }
 
     public String getFullName() {
@@ -26,26 +26,28 @@ public class Employee {
         this.departments = departments;
     }
 
-    public float getSalary() {
+    public int getSalary() {
         return salary;
     }
 
 
-    public void setSalary(float rateSalary) {
+    public void setSalary(int salary) {
+
         this.salary = salary;
     }
 
 
-
-    public int getiD() {
-        return iD;
+    public int getid() {
+        return id;
     }
+
     @Override
     public int hashCode() {
-        return Objects.hash(fullName, departments, salary, iD);
+        return Objects.hash(fullName, departments, salary, id);
     }
+
     @Override
     public String toString() {
-        return "ID: " + iD + " ФИО: " + fullName + " Отдел: " + departments + " Зарплата: " + salary + " рублей.";
+        return "ID: " + id + " ФИО: " + fullName + " Отдел: " + departments + " Зарплата: " + salary + " рублей.";
     }
 }
