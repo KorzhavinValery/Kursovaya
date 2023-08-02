@@ -1,5 +1,3 @@
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.Objects;
 
 public class Employee {
@@ -33,7 +31,7 @@ public class Employee {
     }
 
 
-    public void setSalary(float salary) {
+    public void setSalary(float rateSalary) {
         this.salary = salary;
     }
 
