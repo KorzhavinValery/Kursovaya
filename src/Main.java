@@ -10,7 +10,7 @@ public class Main {
         employeeBook.newEmployee(new Employee("Уткин М.А.", 2, 20));
         employeeBook.newEmployee(new Employee("Широкова А.Д.", 3, 31500));
         employeeBook.newEmployee(new Employee("Воронцов Я.К.", 4, 70055));
-        employeeBook.newEmployee(new Employee("Воронцов Я.К.", 5, 70055));
+
         employeeBook.printAllDataEmployees();
         System.out.println("Cумма затрат на зарплаты за месяц: " + employeeBook.sumSalary() + " рублей.");
         System.out.println("Минимальная сумма затрат за месяц: " + employeeBook.minSalary() + " рублей.");
